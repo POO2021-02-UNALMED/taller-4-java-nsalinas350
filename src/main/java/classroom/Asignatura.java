@@ -4,17 +4,17 @@ public class Asignatura {
 
     String nombre;
     String n = nombre;
-    int codigoInterno;
+    private int codigoInterno;
     int codigoExterno;
 
     Asignatura() {
-        this("Sin nombre");
-        this(0);
+        this("Sin nombre",0,0);
+        //this(0);
     }
 
-    Asignatura(int codigoInterno) {
+    /*Asignatura(int codigoInterno) {
         this("Sin nombre", codigoInterno, 0);
-    }
+    }*/
 
     Asignatura(int codigoExterno) {
         this("Sin nombre", 0, codigoExterno);
@@ -36,7 +36,7 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
+    void cambiarDatosI(int codigoInterno) {
         this.codigoInterno = codigoInterno;
     }
 
